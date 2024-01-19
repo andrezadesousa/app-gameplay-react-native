@@ -10,24 +10,31 @@ export function SignIn() {
   return (
     <View style={styles.container}>
       {/* Muda a cor da bar do celular */}
-      <StatusBar barStyle="light-content" backgroundColor="transparent" translucent />
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="transparent"
+        translucent
+      />
 
-      <Image source={IllustrationImg} style={styles.image} resizeMode="stretch" />
+      <Image
+        source={IllustrationImg}
+        style={styles.image}
+        resizeMode="stretch"
+      />
 
       <View style={styles.content}>
         <Text style={styles.title}>
-          Organize {'\n'}
-          suas jogatinas {'\n'}
+          Organize {"\n"}
+          suas jogatinas {"\n"}
           facilmente
         </Text>
 
         <Text style={styles.subtitle}>
-          Crie grupos para jogar seus games {'\n'}
+          Crie grupos para jogar seus games {"\n"}
           favoritos com seus amigos
         </Text>
 
-        <ButtonIcon />
-
+        <ButtonIcon title="Entrar com Discord" activeOpacity={0.8} />
       </View>
     </View>
   );
