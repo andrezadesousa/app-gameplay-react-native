@@ -9,6 +9,7 @@ import {
 import AppLoading from "expo-app-loading";
 
 import { SignIn } from "./src/screen/SignIn";
+import { Background } from "./src/components/Background";
 export default function App() {
   const [fontsLoaded] = useFonts({
     Inter_400Regular,
@@ -22,7 +23,7 @@ export default function App() {
     return <AppLoading />;
   }
   return (
-    <>
+    <Background>
       {/* Muda a cor da bar do celular */}
       <StatusBar
         barStyle="light-content"
@@ -31,6 +32,6 @@ export default function App() {
       />
       
       <SignIn />
-    </>
+    </Background>
   );
 }

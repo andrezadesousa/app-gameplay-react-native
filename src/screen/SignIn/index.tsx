@@ -9,8 +9,6 @@ import { ButtonIcon } from "../../components/Buttonicon";
 export function SignIn() {
   return (
     <View style={styles.container}>
-      
-
       <Image
         source={IllustrationImg}
         style={styles.image}
@@ -19,8 +17,7 @@ export function SignIn() {
 
       <View style={styles.content}>
         <Text style={styles.title}>
-          Conecte-se {"\n"}
-          e organize suas {"\n"}
+          Conecte-se {"\n"}e organize suas {"\n"}
           jogatinas
         </Text>
 
