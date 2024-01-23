@@ -32,7 +32,7 @@ export function SignIn() {
           favoritos com seus amigos
         </Text>
 
-        <ButtonIcon title="Entrar com Discord" activeOpacity={0.8} onPress={handleSignIn}/>
+        <ButtonIcon title="Entrar com Discord" onPress={handleSignIn}/>
       </View>
     </View>
   );
