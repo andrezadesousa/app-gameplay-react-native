@@ -1,8 +1,8 @@
 // Definir quais são as categorias que a aplicação terá 
-import RankedSvg from '../assets/rankedSvg.svg';
-import DuelSvg from '../assets/duelSvg.svg';
-import FunSvg from '../assets/funSvg.svg';
-import TrainingSvg from '../assets/trainingSvg.svg';
+import RankedSvg from '../assets/ranked.svg';
+import DuelSvg from '../assets/duel.svg';
+import FunSvg from '../assets/fun.svg';
+import TrainingSvg from '../assets/training.svg';
 
 export const categories = [
     {id: '1', title: 'Ranqueada', icon: RankedSvg},
