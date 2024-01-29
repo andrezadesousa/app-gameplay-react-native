@@ -2,9 +2,10 @@ import React from "react";
 
 import { createStackNavigator } from "@react-navigation/stack";
 
+import { theme } from "../global/styles/theme";
+
 import { Home } from "../screen/Home";
 import { SignIn } from "../screen/SignIn";
-import { theme } from "../global/styles/theme";
 
 // const { Navigator, Screen } = createStackNavigator();
 const Stack = createStackNavigator();

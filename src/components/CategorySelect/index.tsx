@@ -1,18 +1,20 @@
 import React from "react";
 import { ScrollView } from "react-native";
-import { RectButton, RectButtonProps } from "react-native-gesture-handler";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import { styles } from "./styles";
 import { categories } from "../../utils/categories";
 import { Category } from "../Category";
-import { theme } from "../../global/styles/theme";
 
 type Props = {
   categorySelected: string;
   setCategory: (categoryId: string) => void; //o setCategory é uma função e ele tem sentido de retorno
+  hasCheckBox?: boolean;
 };
-export function CategorySelect({ categorySelected, setCategory }: Props) {
+export function CategorySelect({
+  categorySelected,
+  setCategory,
+  hasCheckBox = false,
+}: Props) {
   return (
     <ScrollView
       horizontal
@@ -28,6 +30,7 @@ export function CategorySelect({ categorySelected, setCategory }: Props) {
           // checked={category.id === 1}
           checked={category.id === categorySelected}
           onPress={() => setCategory(category.id)}
+          hasCheckBox={hasCheckBox}
         />
       ))}
     </ScrollView>
