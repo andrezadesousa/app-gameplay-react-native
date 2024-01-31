@@ -15,6 +15,6 @@ export const styles = StyleSheet.create({
     borderColor: theme.colors.secondary50,
     paddingHorizontal: 16,
     paddingTop: 16,
-    textAlignVertical: 'top'
+    textAlignVertical: 'top' //formata o texto dentro do componente para o topo
   }
 });
